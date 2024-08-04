@@ -13,6 +13,7 @@
     font-size: 26px;
     color: red;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .navbar-menu {
@@ -36,6 +37,7 @@
 
 .navbar-right img {
     width: 26px;
+    cursor: pointer;
 }
 
 .navbar-right button {
@@ -60,6 +62,7 @@
 
 .navbar-search-icon {
     position: relative;
+    cursor: pointer;
 }
 
 .navbar-search-icon .dot {
