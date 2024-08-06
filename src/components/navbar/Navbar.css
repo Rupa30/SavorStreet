@@ -3,6 +3,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white; */
 }
 
 /* .navbar .logo {
@@ -74,4 +78,50 @@
     min-height: 10px;
     border-radius: 50%;
     background-color: red;
+}
+
+@media (max-width: 1024px) {
+    .navbar p {
+        font-size: 22px;
+    }
+    .navbar-menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+    .navbar-right {
+        gap: 30px;
+    }
+    .navbar-right img {
+        width: 22px;
+    }
+    .navbar-right button {
+        padding: 8px 25px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .navbar p {
+        font-size: 20px;
+    }
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbar-right {
+        gap: 20px;
+    }
+    .navbar-right img {
+        width: 20px;
+    }
+    .navbar-right button {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+    }
 }
