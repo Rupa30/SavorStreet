@@ -6,6 +6,7 @@ import Navbar from "./components/navbar/Navbar"
 import Footer from "./components/Footer/Footer"
 import { useState } from "react"
 import LoginPopup from "./components/LoginPopup/LoginPopup"
+import Successful from "./pages/Successful/Successful"
 
 
 function App() {
@@ -14,12 +15,13 @@ function App() {
   return (
     <>
       <div className="app">
-        {showLogin? <LoginPopup /> : <></>}
+        {showLogin? <LoginPopup setShowLogin={setShowLogin}/> : <></>}
         <Navbar setShowLogin={setShowLogin}/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/order" element={<PlaceOrder/>} />
+          <Route path="/successful" element={<Successful/>} />
         </Routes>
       </div>
       <Footer />

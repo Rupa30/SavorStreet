@@ -1,48 +1,3 @@
-/* .header {
-    // height: 32vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 10px;
-}
-
-.header-contents {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    animation: FadeIn 3s;
-}
-
-.header-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 30px;
-    padding-right: 100px;
-}
-
-.header-info h2 {
-    font-size: 58px;
-}
-
-.header-info button {
-    align-self: flex-start;
-    padding: 15px 25px;
-    background-color: tomato;
-    font-size: 20px;
-    border: none;
-    border-radius: 30px;
-    color: white;
-    cursor: pointer;
-}
-
-.header-img img{
-    width: 300px;
-}
- */
-
-
 .header {
   height: 100vh;
   display: flex;
@@ -55,10 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  /* Adjust max-width as needed */
-  padding: 0 20px;
-  width: 100%;
+  animation: FadeIn 3s;
 }
 
 .header-info {
@@ -90,7 +42,6 @@
 
 .header-img {
   margin-left: 20px;
-  /* Adjust spacing between text and image */
 }
 
 .header-img img {
@@ -102,7 +53,6 @@
 @media (max-width: 1024px) {
   .header {
     padding: 40px 10px;
-    /* Add more padding for better spacing */
     height: auto;
   }
 
@@ -131,7 +81,6 @@
 
   .header-img {
     display: none;
-    /* Hide image on smaller screens */
   }
 }
 

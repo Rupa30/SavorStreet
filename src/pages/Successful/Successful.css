@@ -1,0 +1,127 @@
+/* .successful {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.successful p {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 100px;
+    cursor: pointer;
+} */
+
+
+
+
+.successful {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    /* width: 100vw; */
+    margin: 0;
+    text-align: center;
+    animation: bounceIn 0.6s ease forwards, colorChange 3s infinite alternate;
+    position: relative;
+    overflow: hidden;
+}
+
+.successful p {
+    font-size: 2.5rem; /* Larger text */
+    font-weight: bold;
+    margin: 0;
+    padding: 0 20px; /* Padding for responsiveness */
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: #FF6347; /* Tomato */
+    }
+    25% {
+        color: #FFD700; /* Gold */
+    }
+    50% {
+        color: #32CD32; /* Lime Green */
+    }
+    75% {
+        color: #1E90FF; /* Dodger Blue */
+    }
+    100% {
+        color: #FF69B4; /* Hot Pink */
+    }
+}
+
+@keyframes confetti {
+    0% {
+        top: -10%;
+        opacity: 1;
+    }
+    100% {
+        top: 110%;
+        opacity: 0;
+    }
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    animation: confetti 2.5s ease-in-out infinite;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.confetti:nth-child(2) {
+    left: 20%;
+    animation-delay: 0.3s;
+    background-color: yellow;
+}
+
+.confetti:nth-child(3) {
+    left: 40%;
+    animation-delay: 0.6s;
+    background-color: green;
+}
+
+.confetti:nth-child(4) {
+    left: 60%;
+    animation-delay: 0.9s;
+    background-color: blue;
+}
+
+.confetti:nth-child(5) {
+    left: 80%;
+    animation-delay: 1.2s;
+    background-color: purple;
+}
+
+/* Make sure the text scales down on smaller screens */
+@media (max-width: 768px) {
+    .successful p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .successful p {
+        font-size: 1.5rem;
+    }
+}
+
